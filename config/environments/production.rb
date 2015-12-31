@@ -13,7 +13,7 @@ Rails.application.configure do
          :port                 => 587,
          :domain               =>'gamil.com',
          :user_name            => 'mandeep.enbake@gmail.com',
-         :password             => 'some_password',
+         :password             => 'enbake123',
          :authentication       => :plain,
          :enable_starttls_auto => true  }
 
