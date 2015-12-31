@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
 	def home
-		@tasks = Task.order("id DESC").all
+		@tasks = Task.accessible_by(current_ability)
 	end
 end
