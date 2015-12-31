@@ -13,5 +13,9 @@
             Todo
           %p
             Welcome to Todo Application 
-          =link_to 'New Task', new_task_path, class: 'btn btn-primary', remote: true         
+          =link_to 'New Task', new_task_path, class: 'btn btn-primary', remote: true   
+          .text-center
+            %strong= current_user.email
+          .text-center
+            = link_to 'logout', destroy_user_session_path, method: :delete           
     =yield  
